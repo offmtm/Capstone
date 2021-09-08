@@ -63,7 +63,7 @@ header ul {
 }
 
 .part1{
-    background-color: gray;
+    background-color: rgb(168,168,168);
 	padding: 0;
 	width: 100%;
 	box-sizing: border-box;
@@ -74,6 +74,7 @@ header ul {
     padding-top: 32px;
     vertical-align: middle;
     padding-left: 24px;
+    padding-bottom: 32px;
 }
 .type1 {font-family:"Montserrat", "Verdana", sans-serif;
     font-size: 55px;
@@ -122,4 +123,46 @@ header ul {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+.subhero{
+	background-color: #FFFEF2;
+	width: 100%;
+	box-sizing: border-box;
+    font-family:"Montserrat", "Verdana", sans-serif;
+	display: flex;
+}
+
+.left{
+	width: 60%;
+	padding-top: 32px;
+    padding-left: 24px;
+}
+.right{
+	border-left: 1px solid lightgray;
+	display: inline-block;
+	width: 40%;
+	padding-top: 9px;
+}
+
+
+
+.row{
+	padding-top: 24px;
+    padding-left: 16px;
+}
+.row:hover{
+	background-color: #E1EDF9;
+}
+.row .text{
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+    font-family:"Montserrat", "Verdana", sans-serif;
+	width: 64%;
+}
+.row img{
+	box-sizing: border-box;
+	width: 35%;
+	vertical-align: middle;
+	height: auto;
 }
