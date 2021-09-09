@@ -1,6 +1,5 @@
 .body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-family: 'Raleway', sans-serif;    
 }
 * {
     box-sizing: border-box;
@@ -8,12 +7,17 @@
     padding: 0;
 }
 
-header {
-    height: 64px;
-    max-width: 100%;
-    background-color: hsl(71, 0%, 98%);
-    display: flex;
-    justify-content: space-between;
+nav {
+    box-sizing: border-box;
+	height: 64px;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	background: #FFFEF2;
+	padding-left: 24px;
+    padding-top: 10px;
+	padding-right: 24px;
+    margin-bottom: 16px;
 }
 
 .header-left {
@@ -34,32 +38,49 @@ a:link {
     text-decoration: none;
     color: hsl(30, 7%, 52%);
 }
+a{
+	text-decoration: none;
+	color: #2A364C; 
+}
+a:hover{
+	text-decoration: underline;
+}
 
 
-header ul {
+ul{
     list-style: none;
     display: flex;
-    font-family: "Arial", "Verdana", sans-serif;
+    font-family: 'Raleway', sans-serif;
+    float: right;
+	text-align: right;
+	display: inline-flex;
+	margin: 0;
+    padding-top: 16px;
 }
 
 .logo {
-    font-family: "Montserrat", "Verdana", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 32px;
     vertical-align: middle;
+    padding-top: 16px;
+
 }
 
 .colmar {
     color:hsl(51, 3%, 17%);
     vertical-align: middle;
+    padding-top: 16px;
 }
 
 .academy {
     color: hsl(30, 7%, 52%);
     vertical-align: middle;
+    padding-top: 16px;
+
 }
 
 .menu-option{
-    padding: 0px 0px 0px 16px;
+    padding: 0px 0px 0px 24px;
 }
 
 .part1{
@@ -76,13 +97,13 @@ header ul {
     padding-left: 24px;
     padding-bottom: 32px;
 }
-.type1 {font-family:"Montserrat", "Verdana", sans-serif;
+.type1 {font-family: 'Raleway', sans-serif;
     font-size: 55px;
     margin-bottom: 50px;
     
 }
 .type2{
-    font-family:"Montserrat", "Verdana", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 25px;
     margin-bottom: 25px;
 }
@@ -128,9 +149,9 @@ header ul {
 	background-color: #FFFEF2;
 	width: 100%;
 	box-sizing: border-box;
-    font-family:"Montserrat", "Verdana", sans-serif;
-	display: flex;
-}
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+}   
 
 .left{
 	width: 60%;
@@ -138,31 +159,209 @@ header ul {
     padding-left: 24px;
 }
 .right{
-	border-left: 1px solid lightgray;
-	display: inline-block;
+	float: left;
+	display: block;
 	width: 40%;
-	padding-top: 9px;
+	padding-top: 8px;
 }
 
 
 
 .row{
 	padding-top: 24px;
+    padding-bottom: 24px;
+
     padding-left: 16px;
 }
 .row:hover{
 	background-color: #E1EDF9;
+  
 }
-.row .text{
+.row-text{
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: middle;
-    font-family:"Montserrat", "Verdana", sans-serif;
 	width: 64%;
+    padding-left: 10px;
+
 }
 .row img{
 	box-sizing: border-box;
 	width: 35%;
 	vertical-align: middle;
 	height: auto;
+}
+
+.type3{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 45px;
+    margin-bottom: 24px;
+    font-size: 50px;
+	color:#666666 ;
+
+}
+.type4{
+    font-family: 'Raleway', sans-serif;
+	color:#666666 ;
+    font-size: 25px;
+    margin-top: 40px;
+}   
+
+.start-learning{
+    background-color: rgb(167,168,168);
+	padding: 32px 72px;
+	width: 100%;
+	box-sizing: border-box;
+    position: static;
+    font-family: 'Raleway', sans-serif;
+   
+   
+}
+.type6{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    color: white;
+
+}
+.text2{
+    margin-top: 30px;
+    margin-left: 26px;
+    text-align: left;
+    
+}
+.text2 .h2{
+    margin-top: 16px;
+    color: black;
+}
+.text2 p{
+    margin-top: 26px;
+    color: rgb(167,168,168);
+
+
+}
+
+.course-card{
+    display: inline-block;
+	width: 31%;
+	background: white;
+	margin: 16px;
+	height: 500px;
+	vertical-align: middle;
+}
+.course-card:hover:hover{
+	transform: scale(1.02);
+
+}
+.course-card img{
+	width: 100%;
+}
+.course-card .text{
+	padding: 0 24px 24px;
+}
+
+
+.thesis-title h2{
+	width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+	text-align: center;
+	background-color: #FFFEF2;
+	margin: 0px;
+	padding: 40px 0 30px;
+}
+
+.thesis-exhibit{
+	background-color: #FFFEF2;
+	width: 100%;
+	box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+}
+.thesis-left{
+	width: 60%;
+	padding-top: 32px;
+    vertical-align: middle;
+    padding-left: 24px;
+}
+
+
+video{
+	width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.thesis-left h3{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 16px;
+    margin-left: 24px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 45px;
+    margin-bottom: 24px;
+    font-size: 50px;
+	color:#666666 ;
+}
+
+.thesis-left p{
+    font-family: 'Raleway', sans-serif;
+	color:#666666 ;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left:24px;
+    margin-bottom: 32px;   
+}
+
+.thesis-right{
+	display:inline-block;
+	width: 40%;
+	padding-top: 44px;  
+    padding-right: 40px;
+    vertical-align: middle;
+ 
+
+}
+
+.row2{
+	padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+}
+.row2:hover{
+	background-color: #E1EDF9;
+  
+}
+.row-text2{
+	box-sizing: border-box;
+	display: inline;
+    float: right;
+    padding-top: 80px;
+	width: 64%;
+    vertical-align: middle;
+    line-height: 25px;
+    text-align: center;
+    padding-left: 10px;
+
+}
+.row2 img{
+	box-sizing: border-box;
+	width: 35%;
+	vertical-align: middle;
+	height: auto;
+}
+footer{
+	width: 100%;
+	box-sizing: border-box;
+	height: 96px;
+	padding: 12px 24px 36px;
+	background-color: white;
+	color: gray;
+}
+footer p,a{
+	display: inline-block;
+	vertical-align: top;
+	color: inherit;
+
 }
